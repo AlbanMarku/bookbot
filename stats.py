@@ -18,3 +18,14 @@ def character_count(text):
         else:
             chars[char] = 1
     return chars
+
+def sorted_list(items, source, book_text):
+    print("============ BOOKBOT ============")
+    print(f"Analyzing book found at {source}...")
+    print("----------- Word Count ----------")
+    print(f"Found {number_of_words(book_text)} total words")
+    print("--------- Character Count -------")
+    for item in items:
+        print(f"{item}: {items[item]}")
+    print("============= END ===============")
+    return
